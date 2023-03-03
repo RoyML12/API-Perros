@@ -1,0 +1,33 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Goma",
+    "edad": "1",
+    "fechaNacimiento": "16/4/2022",
+    "raza": "Chihuahua",
+    "telefono": "9615414677"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/6401c5b7d9c033ba85158365 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/6401c77beab699ec992f87c7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Roko",
+    "edad": "4",
+    "fechaNacimiento": "12/2/2020",
+    "raza": "Snawser",
+    "telefono": "9612414677"
+
+}
+
+###
+DELETE http://localhost:9000/api/users/6401cd05c690e6a832b20963 HTTP/1.1
